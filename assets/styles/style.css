@@ -5,11 +5,12 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 200px 200px 200px;
+  align-items: center;
 }
 
 .main-header {
   display: flex;
+  align-self: flex-end;
   flex-wrap: wrap;
   margin-top: 100px;
 }
@@ -30,14 +31,16 @@ body {
 .main-wrapper {
   border-top: 1px solid #959595;
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
 .main-wrapper aside {
   border-right: 1px solid #959595;
   padding-top: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
+  padding-left: 20px;
+  width: 40%;
   min-width: 240px;
 }
 
@@ -58,10 +61,12 @@ body {
   display: block;
 }
 
+.title {
+  margin-left: 20px;
+}
+
 .avatar {
-  /* display: flex; */
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
   border-radius: 8px;
 }
 
@@ -99,6 +104,7 @@ body {
 }
 
 .content {
+  width: 40%;
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -138,4 +144,12 @@ body {
 }
 .list-item strong {
   font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+  .content-item,
+  .main-wrapper,
+  .main-wrapper aside {
+    border: none;
+  }
 }
