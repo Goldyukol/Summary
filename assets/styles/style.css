@@ -1,0 +1,141 @@
+body {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 200px 200px 200px;
+}
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.main-header h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.main-header span {
+  color: #959595;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.main-wrapper {
+  border-top: 1px solid #959595;
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper aside {
+  border-right: 1px solid #959595;
+  padding-top: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  min-width: 240px;
+}
+
+.main-wrapper h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: relative;
+}
+
+.main-wrapper h2:after {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #000;
+  content: "";
+  bottom: -13px;
+  display: block;
+}
+
+.avatar {
+  /* display: flex; */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.contacts,
+.skills,
+.interests,
+.content-item {
+  margin-top: 35px;
+}
+
+.aside-item h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.aside-item,
+.content-item {
+  margin-bottom: 20px;
+}
+
+.aside-item span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.aside-item .target-link {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+.aside-item .target-link:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.content-item {
+  border-bottom: 1px solid #959595;
+  padding-bottom: 20px;
+}
+
+.content-item:last-child {
+  border: none;
+}
+
+.social {
+  color: #000000;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.social:hover {
+  text-decoration: underline;
+}
+
+.inline-items {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social-item {
+  margin-right: 20px;
+}
+.list-main {
+  margin-bottom: 20px;
+}
+.list-item {
+  min-width: 200px;
+}
+.list-item strong {
+  font-weight: 500;
+}
